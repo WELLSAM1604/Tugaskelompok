@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form HTML Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="overlay">
+   <h1>Form Pendaftaran </h1>
+    <h2>Seminar Kebugaran Tubuh</h2>
+    </div>  
+
+    <form action="submit_form.php" method="post">
+        <label for="name">Nama:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="nomorhp">Nomor Hp:</label><br>
+        <input type="tel" id="nomorhp" name="nomorhp" required><br><br>
+
+        <label for="Lahir">Tanggal Lahir:</label><br>
+        <input type="date" id="Lahir" name="Lahir" required><br><br>
+
+        <label for="gender">Jenis Kelamin:</label><br>
+        <input type="radio" id="male" name="gender" value="Laki-laki">
+        <label for="male">Laki-laki</label>
+        <input type="radio" id="female" name="gender" value="Perempuan">
+        <label for="female">Perempuan</label><br><br>
+
+        <label for="riwayat">Ada Riwayat Penyakit?</label><br>
+        <input type="radio" name="riwayat" id="ya" >
+        <label for="ya">Ya</label>
+        <input type="radio" name="riwayat" id="tidak">
+        <label for="tidak">Tidak</label><br><br>
+
+        <label for="sudahblom">Sudah Pernah Mengikuti Seminar</label><br>
+        <input type="radio" name="sudahblom" id="sudah" >
+        <label for="sudah">Ya</label>
+        <input type="radio" name="sudahblom" id="blom">
+        <label for="blom">Tidak</label><br><br>
+
+        <label for="minggu">Waktu Seminar:</label><br>
+        <select name="minggu" id="minggu">
+            <option value="Minggu ke-1">Minggu ke-1</option>
+            <option value="Minggu ke-2">Minggu ke-2</option>
+            <option value="Minggu ke-3">Minggu ke-3</option>
+            <option value="Minggu ke-4">Minggu ke-4</option>
+        </select><br><br>
+
+        <label for="tema">Tema Seminar:</label><br>
+        <select name="tema" id="tema">
+            <option value="tema ke-1">"Pentingnya Tidur Cepat & Bangung Pagi"</option>
+            <option value="tema ke-2">"Waktu Mana Yang Tepat Untuk Olahraga & Makan?"</option>
+        </select><br><br>
+
+       
+
+        <label for="tau">Tau Dari Mana Mengenai Seminar?</label><br><br>
+        <input type="checkbox" name="tau" id="tau" >
+        <label for="tau">Medsos</label><br>
+        <input type="checkbox" name="tau" id="tau" >
+        <label for="tau">Group Whatsup</label><br>
+        <input type="checkbox" name="tau" id="tau" >
+        <label for="tau">Content Video</label><br>
+        <input type="checkbox" name="tau" id="tau" >
+        <label for="tau">dll</label><br>
+
+        <br><br>
+        <input type="button" value="Daftar" onclick="window.location.href='test.html';">
+    </form>
+
+</body>
+</html>
+
+</body>
+</html>

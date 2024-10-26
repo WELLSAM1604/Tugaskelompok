@@ -1,0 +1,92 @@
+/* Gaya umum */
+body {
+    background-image: url(background1.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    font-family: shopia, sans-serif; /* Pastikan font ditetapkan */
+}
+
+/* Gaya untuk overlay */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* Hitam dengan transparansi 70% */
+    color: white;
+    padding: 20px; /* Menambah padding untuk ruang */
+    width: 80%; /* Mengatur lebar lebih fleksibel */
+    max-width: 600px; /* Batas maksimum lebar overlay */
+    border-radius: 30px;
+    text-align: center; /* Memusatkan teks */
+    margin: 20px auto; /* Menambahkan margin untuk pemisahan */
+}
+
+/* Mengatur gaya untuk form */
+form {
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang putih dengan transparansi */
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%; /* Lebar fleksibel */
+    max-width: 600px; /* Batas maksimum lebar form */
+    margin: 20px auto; /* Memusatkan form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+}
+
+/* Mengatur input dan label */
+label {
+    display: block; /* Mengatur label menjadi blok */
+    margin-bottom: 5px; /* Jarak antara label dan input */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%; /* Lebar penuh untuk input */
+    padding: 10px; /* Padding dalam input */
+    margin-bottom: 15px; /* Jarak antar input */
+    border-radius: 5px; /* Sudut melengkung */
+    border: 1px solid #ccc; /* Border halus */
+}
+
+/* Gaya untuk radio dan checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px; /* Jarak antara checkbox/radio dan label */
+}
+
+/* Gaya untuk tombol */
+input[type="button"] {
+    background-color: #4CAF50; /* Warna latar belakang hijau */
+    color: white; /* Warna teks putih */
+    border: none; /* Menghilangkan border default */
+    padding: 10px 20px; /* Padding tombol */
+    border-radius: 5px; /* Sudut melengkung */
+    cursor: pointer; /* Menunjukkan kursor pointer */
+    width: 100%; /* Lebar penuh */
+}
+
+input[type="button"]:hover {
+    background-color: #45a049; /* Warna saat hover */
+}
+
+/* Responsivitas untuk layar kecil */
+@media (max-width: 600px) {
+    .overlay {
+        width: 90%; /* Lebar overlay pada layar kecil */
+    }
+
+    form {
+        width: 95%; /* Lebar form pada layar kecil */
+    }
+
+    input[type="button"] {
+        width: 100%; /* Lebar tombol pada layar kecil */
+    }
+}
+
+@font-face {
+    font-family: shopia;
+    src: url(sophia_francesca/SophiaFrancesca.ttf);
+}
